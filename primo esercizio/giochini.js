@@ -7,15 +7,14 @@ var email = prompt("inserisca email");
 
 //fare lista email consentite
 
-var lista = ["google", "yahoo", "tiscali" , "outlook"];
+var lista = [ "google.it", "yahoo.it", "tiscali.it" , "outlook.it" ];
 
 // dare lunghezza a email e lista
 var listetta = lista.length;
 
-var lunghezzaEmail = email.length;
 
 // titolo per risultato
-var risultatoGiusto;
+var risultatoGiusto = "error";
 
 //----------------------------------------------
 
@@ -25,20 +24,22 @@ var risultatoGiusto;
 
 // facciamo ciclo
 
- for (var i =0; i < lista.length ; i++)
+ for (var i = 0; i < listetta ; i++) {
 
-    if (email== lista[1] ) {
 
-        risultatoGiusto = "ok";
-        console.log(lista[i]);
 
-}
-else  {
+            if (email=== lista[ i ] ) {
 
-        risultatoGiusto = "error";
-        console.log(risultatoGiusto);
-}
+                risultatoGiusto = "ok";
+                console.log(lista[i]);
 
+        }
+        // else  {
+        //
+        //         risultatoGiusto = "error";
+        //         console.log(risultatoGiusto);
+        // }
+ }
 
 // stampare poi un messaggio
 
