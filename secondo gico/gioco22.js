@@ -1,15 +1,15 @@
 // Gioco dei dadi, chi fa di più vince.
 
 //primo lanciatore
-var utentePrimo = parseInt(prompt("lancio 1"));
-console.log("primo lancio");
+var utente = prompt("lancio 1");
+console.log(" l ' utente tira " + utente);
 
 
 
 //secondo lanciatore
-var utenteSecondo = parseInt(prompt("lancio 2"));
+var utentePc = Math.floor((Math.random("lancio 2")* 6)+ 1 );
 
-console.log("secondo lancio");
+console.log("il Pc tira " + utentePc);
 
 //punteggi diversi di 1 punto
 
@@ -19,12 +19,12 @@ var risultatoPiuAlto;
 
 // calcolo di maggioranza
 
-if (utentePrimo > utenteSecondo) {
-    risultatoPiuAlto = "vince player 1"
-} else if (utentePrimo < utenteSecondo) {
-    risultatoPiuAlto = "vince player 2"
+if (utente > utentePc) {
+    risultatoPiuAlto = "vince l' utente con :"+ utente;
+} else if (utente < utentePc) {
+    risultatoPiuAlto = "vince il pc con :" + utentePc;
 }else {
-    risultatoPiuAlto ="split=stesso risultato";
+    risultatoPiuAlto ="split=stesso risultato" ;
 }
 
 
